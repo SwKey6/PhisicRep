@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="white">
+    <link rel="stylesheet" href="pageStyle.css">
+    <link rel="manifest" href="manifest.webmanifest">
+    <link rel="apple-touch-startup-image" href="ik.png">
+    <link rel="android-touch-startup-image" href="ik.png">
+    <title>Massa</title>
+</head>
+<body>
+    <main>
+        <h1 class="mainTitle">Выберите формулу</h1>
+        <h4 class="lowTitle">Которая вам подойдет</h4>
+        <div class="container">
+            <div class="FirstFormula">
+                <h2 class="SearchTitle">Через плотность в СИ</h4>
+                <div class="Inputs">
+                    <Input name="Submit" class="InputFirst" placeholder="Плотность в СИ" id="f1"></Input>
+                    <Input name="Submit" class="InputSecond" placeholder="Объем в СИ" id="f2"></Input>
+                </div>
+                <button class="Submit" onclick="CalculateMassa()">Подтвердить</button>
+            </div>
+        </div>
+    </main>
+
+    <script src="../js/CalculateMassa.js"></script>
+</body>
+</html>

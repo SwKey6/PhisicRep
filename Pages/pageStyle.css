@@ -1,0 +1,32 @@
+.container{
+    max-width: 600px;
+    margin: 0 auto;
+}
+.mainTitle{
+    text-align: center;
+}
+.lowTitle{
+    text-align: center;
+}
+.FirstFormula{
+    background-color: gray;
+    padding: 20px;
+}
+.SearchTitle{
+    text-align: center;
+    color: white;
+}
+.Inputs{
+    margin-left: 80px;
+}
+.InputFirst{
+    padding: 10px;
+}
+.InputSecond{
+    padding: 10px;
+}
+.Submit{
+    padding: 13px;
+    margin-top: 10px;
+    margin-left: 220px;
+}
