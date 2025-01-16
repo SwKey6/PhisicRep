@@ -19,10 +19,10 @@
 .SearchBtn{
     padding: 10px 50px;
     font-weight: 700px;
-    margin-left: 220px;
+    margin-left: 210px;
 }
 @media (max-width: 480px) {
     .SearchBtn{
-        margin-left: 110px;
+        margin-left: 100px;
     }
   }

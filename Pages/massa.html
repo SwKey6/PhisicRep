@@ -14,14 +14,42 @@
     <main>
         <h1 class="mainTitle">Выберите формулу</h1>
         <h4 class="lowTitle">Которая вам подойдет</h4>
+        <button class="MenuBtn"><a href="../index.html">В меню</a></button>
         <div class="container">
-            <div class="FirstFormula">
-                <h2 class="SearchTitle">Через плотность в СИ</h4>
+            <div class="Formulas">
+                <h2 class="SearchTitle">Через плотность в СИ(m = ρV)</h4>
                 <div class="Inputs">
                     <Input name="Submit" class="InputFirst" placeholder="Плотность в СИ" id="f1"></Input>
                     <Input name="Submit" class="InputSecond" placeholder="Объем в СИ" id="f2"></Input>
                 </div>
                 <button class="Submit" onclick="CalculateMassa()">Подтвердить</button>
+            </div>
+            \<div class="Formulas">
+                <h2 class="SearchTitle">Через 2 закон Ньютона в СИ(m = F/a)</h4>
+                <div class="Inputs">
+                    <Input name="Submit" class="InputFirst" placeholder="сила в ньютонах (Н)" id="f3"></Input>
+                    <Input name="Submit" class="InputSecond" placeholder="(м/с²)" id="f4"></Input>
+                </div>
+                <button class="Submit" onclick="CalculateMassa2()">Подтвердить</button>
+            </div>
+            \<div class="Formulas">
+                <h2 class="SearchTitle">Формула гравитационной массы в СИ(m = F/g)</h4>
+                <div class="Inputs">
+                    <Input name="Submit" class="InputFirst" placeholder="сила притяжения" id="f5"></Input>
+                    <Input name="Submit" class="InputSecond" placeholder="ускорение падения" id="f6"></Input>
+                </div>
+                <button class="Submit" onclick="CalculateMassa3()">Подтвердить</button>
+            </div>
+            \<div class="Formulas">
+                <h2 class="SearchTitle">Формула инертной массы в СИ(m=(a1/a)·m1)</h4>
+                <div class="Inputs">
+                    <Input name="Submit" class="InputFirst" placeholder="ускорение" id="f7"></Input>
+                    <Input name="Submit" class="InputSecond" placeholder="масса эталона" id="f8"></Input>
+                </div>
+                <div class="Inputs">
+                    <Input name="Submit" class="InputFirst" placeholder="ускорение эталона" id="f9"></Input>
+                </div>
+                <button class="Submit" onclick="CalculateMassa4()">Подтвердить</button>
             </div>
         </div>
     </main>

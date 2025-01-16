@@ -8,7 +8,7 @@
 .lowTitle{
     text-align: center;
 }
-.FirstFormula{
+.Formulas{
     background-color: gray;
     padding: 20px;
 }
@@ -30,3 +30,17 @@
     margin-top: 10px;
     margin-left: 220px;
 }
+.MenuBtn{
+    padding: 10px 20px;
+    margin-left: 370px;
+    margin-bottom: 10px;
+}
+
+@media (max-width: 480px) {
+    .Submit{
+        margin-left: 120px;
+    }
+    .MenuBtn{
+        margin-left: 150px;
+    }
+  }
