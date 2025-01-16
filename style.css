@@ -21,3 +21,8 @@
     font-weight: 700px;
     margin-left: 220px;
 }
+@media (max-width: 480px) {
+    .SearchBtn{
+        margin-left: 110px;
+    }
+  }
