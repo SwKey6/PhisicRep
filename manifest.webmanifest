@@ -1,0 +1,22 @@
+{
+    "background_color": "white",
+    "theme_color": "white",
+    "description": "Формульник по физике",
+    "display": "fullscreen",
+    "orientation": "any",
+    "icons": [
+        {
+            "src": "ik.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "ik.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ],
+    "name": "Формульник по физике",
+    "short_name": "Формульник",
+    "start_url": "/repository-name/Phisic/"
+}

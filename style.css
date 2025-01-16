@@ -1,0 +1,23 @@
+.container{
+    max-width: 600px;
+    margin: 0 auto;
+}
+.mainTitle{
+    text-align: center;
+}
+.lowTitle{
+    text-align: center;
+}
+.massa{
+    background-color: #5e5e5e;
+    padding: 10px;
+}
+.SearchTitle{
+    text-align: center;
+    color: white;
+}
+.SearchBtn{
+    padding: 10px 50px;
+    font-weight: 700px;
+    margin-left: 220px;
+}
