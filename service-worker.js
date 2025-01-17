@@ -11,7 +11,8 @@ const urlsToCache = [
   '/PhisicRep/Phisic/js/plotnost.js',
   '/PhisicRep/Phisic/js/CalculateMassa.js',
   '/PhisicRep/Phisic/js/CalculateDavlenie.js',
-  '/PhisicRep/Phisic/style.css'
+  '/PhisicRep/Phisic/style.css',
+  '/PhisicRep/Phisic/Formula.html',
   // Добавьте сюда все остальные файлы вашего проекта (CSS, JS, изображения и т.д.)
 ];
 
