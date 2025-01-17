@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="white">
+    <link rel="stylesheet" href="style.css">
+    <link rel="manifest" href="manifest.webmanifest">
+    <link rel="apple-touch-startup-image" href="ik.png">
+    <link rel="android-touch-startup-image" href="ik.png">
+    <title>СИ</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="header__ul">
+                <li class="header__li"><a href="Formula.html" class="header__a">Формульник</a></li>
+                <li class="header__li"><a href="CI.html" class="header__a">Калькулятор в СИ</a></li>
+                <li class="header__li"><a href="index.html" class="header__a">Главная</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="container">
+            <h1 class="CI__title">Перевод в систему СИ</h1>
+            <div class="massa">
+                <h3 class="low__title">Длины</h3>
+                <div class="Inputs">
+                    <input type="text" class="inputCI" placeholder="см - м" id="f1">
+                </div>
+                <button class="Submit" onclick="TranslateEaseCantiMetersOnMeters()">Перевести</button>
+                <div class="Inputs">
+                    <input type="text" class="inputCI" placeholder="мм - м" id="f2">
+                </div>
+                <button class="Submit" onclick="TranslateEaseMiliMetersOnMeters()">Перевести</button>
+                <div class="Inputs">
+                    <input type="text" class="inputCI" placeholder="км - м" id="f3">
+                </div>
+                <button class="Submit" onclick="TranslateEaseKiloMetersOnMeters()">Перевести</button>
+            </div>\
+            <div class="massa">
+                <h3 class="low__title">Длины в квадрате</h3>
+                <div class="Inputs">
+                    <input type="text" class="inputCI" placeholder="см2 - м2" id="f4">
+                </div>
+                <button class="Submit" onclick="TranslateMediumSantiMetersOnMetersKV()">Перевести</button>
+                <div class="Inputs">
+                    <input type="text" class="inputCI" placeholder="мм2 - м2" id="f5">
+                </div>
+                <button class="Submit" onclick="TranslateMediumMiliMetersOnMetersKV()">Перевести</button>
+                <div class="Inputs">
+                    <input type="text" class="inputCI" placeholder="км2 - м2" id="f6">
+                </div>
+                <button class="Submit" onclick="TranslateMediumKiloMetersOnMetersKV()">Перевести</button>
+                <div class="Inputs">
+                    <input type="text" class="inputCI" placeholder="га - м2" id="f7">
+                </div>
+                <button class="Submit" onclick="TranslateMediumGektarsOnMetersKV()">Перевести</button>
+            </div>\
+            <div class="massa">
+                <h3 class="low__title">Кубические объемы</h3>
+                <div class="Inputs">
+                    <input type="text" class="inputCI" placeholder="см3 - м3" id="f8">
+                </div>
+                <button class="Submit" onclick="TranslateHardSantiMetersOnMetersKV()">Перевести</button>
+                <div class="Inputs">
+                    <input type="text" class="inputCI" placeholder="мм3 - м3" id="f9">
+                </div>
+                <button class="Submit" onclick="TranslateHardMiliMetersOnMetersKV()">Перевести</button>
+                <div class="Inputs">
+                    <input type="text" class="inputCI" placeholder="дм3 - м3" id="f10">
+                </div>
+                <button class="Submit" onclick="TranslateHardDmMetersOnMetersKV()">Перевести</button>
+                <div class="Inputs">
+                    <input type="text" class="inputCI" placeholder="л3 - м3" id="f11">
+                </div>
+                <button class="Submit" onclick="TranslateHardLitersMetersOnMetersKV()">Перевести</button>
+                <div class="Inputs">
+                    <input type="text" class="inputCI" placeholder="км3 - м3" id="f12">
+                </div>
+                <button class="Submit" onclick="TranslateHardKiloMetersOnMetersKV()">Перевести</button>
+            </div>\
+            <div class="massa">
+                <h3 class="low__title">Ньютоны</h3>
+                <div class="Inputs">
+                    <input type="text" class="inputCI" placeholder="кН - Н" id="f13">
+                </div>
+                <button class="Submit" onclick="TranslatekNtoN()">Перевести</button>
+                <div class="Inputs">
+                    <input type="text" class="inputCI" placeholder="МН - Н" id="f14">
+                </div>
+                <button class="Submit" onclick="TranslateMNtoN()">Перевести</button>
+                <div class="Inputs">
+                    <input type="text" class="inputCI" placeholder="ГН - Н" id="f15">
+                </div>
+                <button class="Submit" onclick="TranslateGNtoN()">Перевести</button>
+        </div>
+        </div>
+    </main>
+
+    <script src="../js/CI.js"></script>
+</body>
+</html>

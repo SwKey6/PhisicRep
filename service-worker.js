@@ -1,11 +1,11 @@
-const CACHE_NAME = 'physics-formulas-v2';
+const CACHE_NAME = 'physics-formulas-v3';
 const urlsToCache = [
   '/PhisicRep/Phisic/',
   '/PhisicRep/Phisic/index.html',
   '/PhisicRep/Phisic/manifest.webmanifest',
-  '/PhisicRepPhisic/ik.png',
+  '/PhisicRep/Phisic/ik.png',
   '/PhisicRep/Phisic/Pages/massa.html',
-  '/PhisicRep/Phisic/Pages/plotnost.html.html',
+  '/PhisicRep/Phisic/Pages/plotnost.html',
   '/PhisicRep/Phisic/Pages/davlenie.html',
   '/PhisicRep/Phisic/Pages/pageStyle.css',
   '/PhisicRep/Phisic/js/plotnost.js',
@@ -13,6 +13,8 @@ const urlsToCache = [
   '/PhisicRep/Phisic/js/CalculateDavlenie.js',
   '/PhisicRep/Phisic/style.css',
   '/PhisicRep/Phisic/Formula.html',
+  '/PhisicRep/Phisic/CI.html',
+  '/PhisicRep/Phisic/js/CI.js',
   // Добавьте сюда все остальные файлы вашего проекта (CSS, JS, изображения и т.д.)
 ];
 

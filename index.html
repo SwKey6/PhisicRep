@@ -3,34 +3,38 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <meta name="theme-color" content="white">
     <link rel="stylesheet" href="style.css">
     <link rel="manifest" href="manifest.webmanifest">
     <link rel="apple-touch-startup-image" href="ik.png">
     <link rel="android-touch-startup-image" href="ik.png">
-    <title>Main</title>
+    <title>Прихожая</title>
 </head>
 
 <body>
     <header>
         <nav>
             <ul class="header__ul">
-                <li class="header__li"><a href="" class="header__a">Формульник</a></li>
-                <li class="header__li"><a href="" class="header__a">Калькулятор в СИ</a></li>
+                <li class="header__li"><a href="Formula.html" class="header__a">Формульник</a></li>
+                <li class="header__li"><a href="CI.html" class="header__a">Калькулятор в СИ</a></li>
                 <li class="header__li"><a href="index.html" class="header__a">Главная</a></li>
             </ul>
         </nav>
     </header>
 
+    <main>
+        <h1 class="index__title">Главная страница</h1>
+    </main>
+
     <script>
         if ('serviceWorker' in navigator) {
             window.addEventListener('load', () => {
-                navigator.serviceWorker.register('/repository-name/Phisic/service-worker.js')
-                    .then((registration) => {
+                navigator.serviceWorker.register('/PhisicRep/service-worker.js')
+                    .then(registration => {
                         console.log('ServiceWorker registration successful');
                     })
-                    .catch((err) => {
+                    .catch(err => {
                         console.log('ServiceWorker registration failed: ', err);
                     });
             });
