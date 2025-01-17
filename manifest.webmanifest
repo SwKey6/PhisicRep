@@ -18,5 +18,6 @@
     ],
     "name": "Формульник по физике",
     "short_name": "Формульник",
-    "start_url": "/repository-name/Phisic/"
+    "start_url": "/PhisicRep/Phisic/",
+    "scope": "/PhisicRep/Phisic/"
 }

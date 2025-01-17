@@ -21,6 +21,16 @@
     font-weight: 700px;
     margin-left: 200px;
 }
+.header__ul{
+    list-style: none;
+    font-weight: 700;
+    display: flex;
+    margin-left: 670px;
+}  
+.header__li{
+    margin-left: 10px;
+    font-size: 25px;
+}
 @media (max-width: 720px) {
     .SearchBtn{
         margin-left: 100px;
