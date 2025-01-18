@@ -10,6 +10,36 @@
     <link rel="apple-touch-startup-image" href="ik.png">
     <link rel="android-touch-startup-image" href="ik.png">
     <title>Formula</title>
+    <script>
+        // Устанавливаем правильный пароль
+        var correctPassword = "www"; // Пример пароля
+        var attempts = 3; // Максимальное количество попыток
+
+        // Функция для запроса пароля с попытками
+        function askPassword() {
+            var userPassword = prompt("Введите пароль. Осталось попыток: " + attempts);
+
+            // Проверка пароля
+            if (userPassword === correctPassword) {
+                alert("Пароль правильный! Добро пожаловать.");
+                // Продолжить загрузку страницы, если пароль правильный
+                return true;
+            } else {
+                attempts--;
+                if (attempts > 0) {
+                    alert("Неверный пароль. Осталось попыток: " + attempts);
+                    return askPassword(); // Рекурсивно запрашиваем пароль
+                } else {
+                    alert("Вы исчерпали все попытки!");
+                    window.location.href = "https://example.com/error.html"; // Перенаправление на страницу ошибки
+                    return false;
+                }
+            }
+        }
+
+        // Запуск функции при загрузке страницы
+        askPassword();
+    </script>
 </head>
 
 <body>
