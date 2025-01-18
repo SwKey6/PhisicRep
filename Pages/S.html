@@ -8,7 +8,7 @@
     <link rel="manifest" href="manifest.webmanifest">
     <link rel="apple-touch-startup-image" href="ik.png">
     <link rel="android-touch-startup-image" href="ik.png">
-    <title>Расстояние</title>
+    <title>Движения</title>
 </head>
 <body>
     <main>
@@ -23,6 +23,31 @@
                     <Input name="Submit" class="InputSecond" placeholder="Время" id="f2"></Input>
                 </div>
                 <button class="Submit" onclick="SearchS()">Подтвердить</button>
+            </div>\
+
+            <div class="Formulas">
+                <h2 class="SearchTitle">Постоянная скорость в СИ(V = S/t)</h4>
+                <div class="Inputs">
+                    <Input name="Submit" class="InputFirst" placeholder="Растояние" id="f3"></Input>
+                    <Input name="Submit" class="InputSecond" placeholder="Время" id="f4"></Input>
+                </div>
+                <button class="Submit" onclick="SearchV()">Подтвердить</button>
+            </div>\
+            <div class="Formulas">
+                <h2 class="SearchTitle">Средняя скорость в СИ(Vср = (Vнач + Vкон) / 2)</h4>
+                <div class="Inputs">
+                    <Input name="Submit" class="InputFirst" placeholder="Начальняя скорость" id="f5"></Input>
+                    <Input name="Submit" class="InputSecond" placeholder="Конечная скорость" id="f6"></Input>
+                </div>
+                <button class="Submit" onclick="SearchVcr()">Подтвердить</button>
+            </div>\
+            <div class="Formulas">
+                <h2 class="SearchTitle">Время при равномерном движении в СИ(t = S/V)</h4>
+                <div class="Inputs">
+                    <Input name="Submit" class="InputFirst" placeholder="Растояние" id="f7"></Input>
+                    <Input name="Submit" class="InputSecond" placeholder="Скорость" id="f8"></Input>
+                </div>
+                <button class="Submit" onclick="SearchT()">Подтвердить</button>
             </div>
         </div>
     </main>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="white">
+    <link rel="stylesheet" href="pageStyle.css">
+    <link rel="manifest" href="manifest.webmanifest">
+    <link rel="apple-touch-startup-image" href="ik.png">
+    <link rel="android-touch-startup-image" href="ik.png">
+    <title>Силы</title>
+</head>
+<body>
+    <main>
+        <h1 class="mainTitle">Выберите формулу</h1>
+        <h4 class="lowTitle">Которая вам подойдет</h4>
+        <button class="MenuBtn"><a href="../Formula.html">В меню</a></button>
+        <div class="container">
+            <div class="Formulas">
+                <h2 class="SearchTitle">Сила тяжести в СИ(Fтяж = mg)</h4>
+                <div class="Inputs">
+                    <Input name="Submit" class="InputFirst" placeholder="Масса" id="f1"></Input>
+                    <Input name="Submit" class="InputSecond" placeholder="Ускорение падения" id="f2"></Input>
+                </div>
+                <button class="Submit" onclick="SearchFtyj()">Подтвердить</button>
+            </div>\
+            <div class="Formulas">
+                <h2 class="SearchTitle">Сила трения в СИ(Fтр = qN)</h4>
+                <div class="Inputs">
+                    <Input name="Submit" class="InputFirst" placeholder="коф. трения" id="f3"></Input>
+                    <Input name="Submit" class="InputSecond" placeholder="сила норм. реакции" id="f4"></Input>
+                </div>
+                <button class="Submit" onclick="SearchFtr()">Подтвердить</button>
+            </div>\
+            <div class="Formulas">
+                <h2 class="SearchTitle">Сила упругости в СИ(Fупр = kx)</h4>
+                <div class="Inputs">
+                    <Input name="Submit" class="InputFirst" placeholder="жесткость" id="f5"></Input>
+                    <Input name="Submit" class="InputSecond" placeholder="деформация" id="f6"></Input>
+                </div>
+                <button class="Submit" onclick="SearchFupr()">Подтвердить</button>
+            </div>\
+            <div class="Formulas">
+                <h2 class="SearchTitle">Сила архимеда в СИ(Fархимеда = pVg)</h4>
+                <div class="Inputs">
+                    <Input name="Submit" class="InputFirst" placeholder="Плотность жидкости" id="f7"></Input>
+                    <Input name="Submit" class="InputSecond" placeholder="Объем тела в жид." id="f8"></Input>
+                    <Input name="Submit" class="InputSecond" placeholder="Ускорение падения" id="f9"></Input>
+                </div>
+                <button class="Submit" onclick="SearchFarh()">Подтвердить</button>
+            </div>
+    </main>
+
+    <script src="../js/Powers.js"></script>
+</body>
+</html>

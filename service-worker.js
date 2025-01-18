@@ -1,4 +1,4 @@
-const CACHE_NAME = 'physics-formulas-v3';
+const CACHE_NAME = 'physics-formulas-v4';
 const urlsToCache = [
   '/PhisicRep/Phisic/',
   '/PhisicRep/Phisic/index.html',
@@ -15,7 +15,11 @@ const urlsToCache = [
   '/PhisicRep/Phisic/Formula.html',
   '/PhisicRep/Phisic/CI.html',
   '/PhisicRep/Phisic/js/CI.js',
-  // Добавьте сюда все остальные файлы вашего проекта (CSS, JS, изображения и т.д.)
+  '/PhisicRep/Phisic/Pages/S.html',
+  '/PhisicRep/Phisic/js/S.js',
+  '/PhisicRep/Phisic/Pages/Powers.html',
+  '/PhisicRep/Phisic/js/Powers.js',
+  '/PhisicRep/Phisic/CI.css',
 ];
 
 self.addEventListener('install', (event) => {
@@ -27,29 +31,37 @@ self.addEventListener('install', (event) => {
   );
 });
 
+self.addEventListener('activate', (event) => {
+  event.waitUntil(
+    caches.keys().then((cacheNames) => {
+      return Promise.all(
+        cacheNames.map((cacheName) => {
+          if (cacheName !== CACHE_NAME) {
+            return caches.delete(cacheName);
+          }
+        })
+      );
+    })
+  );
+});
+
 self.addEventListener('fetch', (event) => {
   event.respondWith(
-    caches.match(event.request)
+    fetch(event.request)
       .then((response) => {
-        // Возвращаем данные из кэша, если они есть
-        if (response) {
-          return response;
+        // Если получили ответ от сети, кэшируем его
+        if (response.status === 200) {
+          const responseToCache = response.clone();
+          caches.open(CACHE_NAME)
+            .then((cache) => {
+              cache.put(event.request, responseToCache);
+            });
         }
-        // Иначе делаем сетевой запрос
-        return fetch(event.request)
-          .then((response) => {
-            // Проверяем что ответ валидный
-            if (!response || response.status !== 200 || response.type !== 'basic') {
-              return response;
-            }
-            // Кэшируем новый ответ
-            const responseToCache = response.clone();
-            caches.open(CACHE_NAME)
-              .then((cache) => {
-                cache.put(event.request, responseToCache);
-              });
-            return response;
-          });
+        return response;
+      })
+      .catch(() => {
+        // Если сеть недоступна, пробуем взять из кэша
+        return caches.match(event.request);
       })
   );
 });

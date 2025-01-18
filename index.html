@@ -9,7 +9,7 @@
     <link rel="manifest" href="manifest.webmanifest">
     <link rel="apple-touch-startup-image" href="ik.png">
     <link rel="android-touch-startup-image" href="ik.png">
-    <title>Прихожая</title>
+    <title>Formula</title>
 </head>
 
 <body>
@@ -24,19 +24,110 @@
     </header>
 
     <main>
-        <h1 class="index__title">Главная страница</h1>
+        <section class="CIsection">
+            <div class="container">
+                <h1 class="index__title">Главная страница</h1>
+                <p class="index__p">Здравствуйте, в этом приложении вы можете быстро перевести все единицы в систему СИ,
+                    использовать все формулы для быстрого решения задач по физике.</p>
+                <div class="mainIDinCI">
+                    <h3 style="text-align: center;">Основные единицы измерения в СИ</h3>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Величина</th>
+                                <th>Еденица измерения (СИ)</th>
+                                <th>Обозначение</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th>Длина</th>
+                                <th>Метр (м)</th>
+                                <th>l</th>
+                            </tr>
+                            <tr>
+                                <td>Масса</td>
+                                <td>Килограмм (кг)</td>
+                                <td>m</td>
+                            </tr>
+                            <tr>
+                                <td>Время</td>
+                                <td>Секунда (с)</td>
+                                <td>t</td>
+                            </tr>
+                            <tr>
+                                <td>Сила</td>
+                                <td>Ньютон (Н)</td>
+                                <td>F</td>
+                            </tr>
+                            <tr>
+                                <td>Объём</td>
+                                <td>Кубический метр (м³)</td>
+                                <td>V</td>
+                            </tr>
+                            <tr>
+                                <td>Работа</td>
+                                <td>Джоуль (Дж)</td>
+                                <td>A</td>
+                            </tr>
+                            <tr>
+                                <td>Теплота</td>
+                                <td>Джоуль (Дж)</td>
+                                <td>Q</td>
+                            </tr>
+                            <tr>
+                                <td>Коэффициент полезного действия</td>
+                                <td>Безразмерная величина (доля или %)</td>
+                                <td>η (эта)</td>
+                            </tr>
+                            <tr>
+                                <td>Энергия</td>
+                                <td>Джоуль (Дж)</td>
+                                <td>E</td>
+                            </tr>
+                            <tr>
+                                <td>Давление</td>
+                                <td>Паскаль (Па)</td>
+                                <td>P</td>
+                            </tr>
+                            <tr>
+                                <td>Мощность</td>
+                                <td>Ватт (Вт)</td>
+                                <td>P</td>
+                            </tr>
+                            <tr>
+                                <td>Ускорение</td>
+                                <td>Метр в секунду в квадрате (м/с²)</td>
+                                <td>a</td>
+                            </tr>
+                            <tr>
+                                <td>Импульс</td>
+                                <td>Килограмм-метр в секунду (кг·м/с)</td>
+                                <td>p</td>
+                            </tr>
+                            <tr>
+                                <td>Жёсткость пружины</td>
+                                <td>Ньютон на метр (Н/м)</td>
+                                <td>k</td>
+                            </tr>
+                            <tr>
+                                <td>Высота</td>
+                                <td>Метр (м)</td>
+                                <td>h</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
     </main>
 
     <script>
         if ('serviceWorker' in navigator) {
             window.addEventListener('load', () => {
-                navigator.serviceWorker.register('/PhisicRep/service-worker.js')
-                    .then(registration => {
-                        console.log('ServiceWorker registration successful');
-                    })
-                    .catch(err => {
-                        console.log('ServiceWorker registration failed: ', err);
-                    });
+                navigator.serviceWorker.register('./service-worker.js')
+                    .then((reg) => console.log('Service worker registered:', reg))
+                    .catch((err) => console.log('Service worker registration failed:', err));
             });
         }
     </script>

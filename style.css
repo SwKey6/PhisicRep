@@ -56,14 +56,35 @@
     border-radius: 15px;
     margin-left: 190px;
 }
+.index__p{
+    font-size: 20px;
+    text-align: center;
+}
+table {
+    width: 50%;
+    border-collapse: collapse;
+    margin: 20px auto;
+}
+th, td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+}
+th {
+    background-color: #f4f4f4;
+}
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
 @media (max-width: 720px) {
     .SearchBtn{
         margin-left: 100px;
     }
     .header__ul{
-        margin-left: 0px;
+        margin-left: -30px;
     }
     .header__li{
         font-size: 16px;
     }
+    
   }
