@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="white">
+    <link rel="stylesheet" href="pageStyle.css">
+    <link rel="manifest" href="manifest.webmanifest">
+    <link rel="apple-touch-startup-image" href="ik.png">
+    <link rel="android-touch-startup-image" href="ik.png">
+    <title>Количество теплоты</title>
+</head>
+<body>
+    <main>
+        <h1 class="mainTitle">Выберите формулу</h1>
+        <h4 class="lowTitle">Которая вам подойдет</h4>
+        <button class="MenuBtn"><a href="../Formula.html">В меню</a></button>
+        <div class="container">
+            <div class="Formulas">
+                <h2 class="SearchTitle">Нагревание или охлаждение в СИ(Q = cmΔT)</h4>
+                <div class="Inputs">
+                    <Input name="Submit" class="InputFirst" placeholder="Удельная теплоемкость" id="f1"></Input>
+                    <Input name="Submit" class="InputSecond" placeholder="Масса" id="f2"></Input>
+                    <Input name="Submit" class="InputSecond" placeholder="Дельта температуры" id="f3"></Input>
+                </div>
+                <button class="Submit" onclick="SearchQ1()">Подтвердить</button>
+            </div>\
+            <div class="Formulas">
+                <h2 class="SearchTitle">Плавление или кристализация(Q = λm)</h4>
+                <div class="Inputs">
+                    <Input name="Submit" class="InputFirst" placeholder="Удельная теплота плав." id="f1"></Input>
+                    <Input name="Submit" class="InputSecond" placeholder="Масса" id="f2"></Input>
+                </div>
+                <button class="Submit" onclick="SearchQ2()">Подтвердить</button>
+            </div>\
+            <div class="Formulas">
+                <h2 class="SearchTitle">Кипение или конденсация(Q = rm)</h4>
+                <div class="Inputs">
+                    <Input name="Submit" class="InputFirst" placeholder="У. теплота парообр." id="f1"></Input>
+                    <Input name="Submit" class="InputSecond" placeholder="Масса" id="f2"></Input>
+                </div>
+                <button class="Submit" onclick="SearchQ3()">Подтвердить</button>
+            </div>\
+            <div class="Formulas">
+                <h2 class="SearchTitle">сгорание топлива(Q = qm)</h4>
+                <div class="Inputs">
+                    <Input name="Submit" class="InputFirst" placeholder="У. теплота парообр." id="f1"></Input>
+                    <Input name="Submit" class="InputSecond" placeholder="Масса" id="f2"></Input>
+                </div>
+                <button class="Submit" onclick="SearchQ4()">Подтвердить</button>
+            </div>
+        </div>
+    </main>
+
+    <script src="../js/Q.js"></script>
+</body>
+</html>

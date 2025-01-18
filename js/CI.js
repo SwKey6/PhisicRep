@@ -220,3 +220,49 @@ function Translate8toC(){
     let result = value*2592000
     alert("В системе СИ = " + result + " секунд");
 }
+
+function Translate1toDj(){
+    let value = parseFloat(document.getElementById('f24').value)
+    if(isNaN(value)){
+        alert('Введите число');
+        return;
+    }
+    let result = value*4.186
+    alert("В системе СИ = " + result + " Джоулей");
+}
+function Translate2toDj(){
+    let value = parseFloat(document.getElementById('f25').value)
+    if(isNaN(value)){
+        alert('Введите число');
+        return;
+    }
+    let result = value*4186
+    alert("В системе СИ = " + result + " Джоулей");
+}
+function Translate3toDj(){
+    let value = parseFloat(document.getElementById('f26').value)
+    if(isNaN(value)){
+        alert('Введите число');
+        return;
+    }
+    let result = value*745.7
+    alert("В системе СИ = " + result + " Джоулей");
+}
+function Translate4toDj(){
+    let value = parseFloat(document.getElementById('f27').value)
+    if(isNaN(value)){
+        alert('Введите число');
+        return;
+    }
+    let result = value*1000
+    alert("В системе СИ = " + result + " Джоулей");
+}
+function Translate5toDj(){
+    let value = parseFloat(document.getElementById('f28').value)
+    if(isNaN(value)){
+        alert('Введите число');
+        return;
+    }
+    let result = value*1000000
+    alert("В системе СИ = " + result + " Джоулей");
+}

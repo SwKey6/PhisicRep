@@ -1,4 +1,4 @@
-const CACHE_NAME = 'physics-formulas-v5';
+const CACHE_NAME = 'physics-formulas-v6';
 const urlsToCache = [
   '/PhisicRep/Phisic/',
   '/PhisicRep/Phisic/index.html',
@@ -20,6 +20,8 @@ const urlsToCache = [
   '/PhisicRep/Phisic/Pages/Powers.html',
   '/PhisicRep/Phisic/js/Powers.js',
   '/PhisicRep/Phisic/CI.css',
+  '/PhisicRep/Phisic/Pages/Q.html',
+  '/PhisicRep/Phisic/js/Q.js',
 ];
 
 self.addEventListener('install', (event) => {
