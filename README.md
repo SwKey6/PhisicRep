@@ -1,1 +1,1 @@
-https://swkey6.github.io/PhisicRep/
+http://www.swkey.ru
