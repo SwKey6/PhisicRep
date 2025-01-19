@@ -24,8 +24,18 @@
     <main>
         <div class="container">
             <h1 class="CI__title">Перевод в систему СИ</h1>
-            <div class="massa">
+            <div class="massa1" id="massa1">
+                <button class="moveTo"><a href="#v2" class="CI__a">К площадям</a></button>
+                <button class="moveTo"><a href="#v3" class="CI__a">К объемам</a></button>
+                <button class="moveTo"><a href="#v4" class="CI__a">К Ньютонам</a></button>
+                <button class="moveTo"><a href="#v5" class="CI__a">К времени</a></button>
+                <button class="moveTo"><a href="#v6" class="CI__a">К Джоулям</a></button>
+                <button class="moveTo"><a href="#v7" class="CI__a">К градусам</a></button>
+                <button class="moveTo"><a href="#v8" class="CI__a">К скорости</a></button>
+            </div>\
+            <div class="massa" id="v1">
                 <h3 class="low__title">Длины</h3>
+                <button class="moveToStart"><a href="#massa1" class="CI__a">В начало</a></button>
                 <div class="Inputs">
                     <input type="text" class="inputCI" placeholder="см - м" id="f1">
                 </div>
@@ -39,8 +49,9 @@
                 </div>
                 <button class="Submit" onclick="TranslateEaseKiloMetersOnMeters()">Перевести</button>
             </div>\
-            <div class="massa">
-                <h3 class="low__title">Длины в квадрате</h3>
+            <div class="massa" id="v2">
+                <h3 class="low__title">Площади</h3>
+                <button class="moveToStart"><a href="#massa1" class="CI__a">В начало</a></button>
                 <div class="Inputs">
                     <input type="text" class="inputCI" placeholder="см2 - м2" id="f4">
                 </div>
@@ -58,8 +69,9 @@
                 </div>
                 <button class="Submit" onclick="TranslateMediumGektarsOnMetersKV()">Перевести</button>
             </div>\
-            <div class="massa">
-                <h3 class="low__title">Кубические объемы</h3>
+            <div class="massa" id="v3">
+                <h3 class="low__title">Объемы</h3>
+                <button class="moveToStart"><a href="#massa1" class="CI__a">В начало</a></button>
                 <div class="Inputs">
                     <input type="text" class="inputCI" placeholder="см3 - м3" id="f8">
                 </div>
@@ -81,8 +93,9 @@
                 </div>
                 <button class="Submit" onclick="TranslateHardKiloMetersOnMetersKV()">Перевести</button>
             </div>\
-            <div class="massa">
+            <div class="massa" id="v4">
                 <h3 class="low__title">Ньютоны</h3>
+                <button class="moveToStart"><a href="#massa1" class="CI__a">В начало</a></button>
                 <div class="Inputs">
                     <input type="text" class="inputCI" placeholder="кН - Н" id="f13">
                 </div>
@@ -96,8 +109,9 @@
                 </div>
                 <button class="Submit" onclick="TranslateGNtoN()">Перевести</button>
             </div>\
-            <div class="massa">
+            <div class="massa" id="v5">
                 <h3 class="low__title">Время</h3>
+                <button class="moveToStart"><a href="#massa1" class="CI__a">В начало</a></button>
                 <div class="Inputs">
                     <input type="text" class="inputCI" placeholder="мс - с" id="f16">
                 </div>
@@ -131,8 +145,9 @@
                 </div>
                 <button class="Submit" onclick="Translate8toC()">Перевести</button>
             </div>\
-            <div class="massa">
+            <div class="massa" id="v6">
                 <h3 class="low__title">Джоули</h3>
+                <button class="moveToStart"><a href="#massa1" class="CI__a">В начало</a></button>
                 <div class="Inputs">
                     <input type="text" class="inputCI" placeholder="кал - Дж" id="f24">
                 </div>
@@ -154,6 +169,30 @@
                 </div>
                 <button class="Submit" onclick="Translate5toDj()">Перевести</button>
             </div>\
+            <div class="massa" id="v7">
+                <h3 class="low__title">Градусы</h3>
+                <button class="moveToStart"><a href="#massa1" class="CI__a">В начало</a></button>
+                <div class="Inputs">
+                    <input type="text" class="inputCI" placeholder="K - °C" id="f29">
+                </div>
+                <button class="Submit" onclick="Translate1toCelsia()">Перевести</button>
+                <div class="Inputs">
+                    <input type="text" class="inputCI" placeholder="°F - °C" id="f30">
+                </div>
+                <button class="Submit" onclick="Translate2toCelsia()">Перевести</button>
+                <div class="Inputs">
+                    <input type="text" class="inputCI" placeholder="°R - °C" id="f31">
+                </div>
+                <button class="Submit" onclick="Translate3toCelsia()">Перевести</button>
+            </div>\
+            <div class="massa" id="v8">
+                <h3 class="low__title">Скорость</h3>
+                <button class="moveToStart"><a href="#massa1" class="CI__a">В начало</a></button>
+                <div class="Inputs">
+                    <input type="text" class="inputCI" placeholder="км/ч - м/с" id="f32">
+                </div>
+                <button class="Submit" onclick="TranslateSpeed()">Перевести</button>
+            </div>
         </div>
     </main>
 

@@ -266,3 +266,41 @@ function Translate5toDj(){
     let result = value*1000000
     alert("В системе СИ = " + result + " Джоулей");
 }
+
+function Translate1toCelsia(){
+    let value = parseFloat(document.getElementById('f29').value)
+    if(isNaN(value)){
+        alert('Введите число');
+        return;
+    }
+    let result = value-273.15
+    alert("В системе СИ = " + result + " Градусов Цельсия");
+}
+function Translate2toCelsia() {
+    let value = parseFloat(document.getElementById('f30').value);
+    if (isNaN(value)) {
+        alert('Введите число');
+        return;
+    }
+    let result = (value - 32) * 5 / 9;  // Перевод из Фаренгейтов в Цельсий
+    alert("В системе СИ = " + result + " Градусов Цельсия");
+}
+function Translate3toCelsia() {
+    let value = parseFloat(document.getElementById('f31').value);
+    if (isNaN(value)) {
+        alert('Введите число');
+        return;
+    }
+    let result = value * (5 / 4);  // Перевод из Реомюра в Цельсий
+    alert("В системе СИ = " + result + " Градусов Цельсия");
+}
+
+function TranslateSpeed() {
+    let value = parseFloat(document.getElementById('f32').value);
+    if (isNaN(value)) {
+        alert('Введите число');
+        return;
+    }
+    let result = value / 3.6;  // Перевод из км/ч в м/с
+    alert("В системе СИ = " + result + " м/с");
+}

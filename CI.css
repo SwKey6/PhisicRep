@@ -37,6 +37,21 @@
     text-align: center;
     color: white;
 }
+.massa1{
+    display: flex;
+    align-items: center;
+    background-color: #5e5e5e;
+    padding: 14px;
+    border-radius: 15px;
+    flex-wrap: wrap;
+}
+.moveTo{
+    padding: 10px;
+}
+.moveToStart{
+    margin-left: 240px;
+    padding: 14px;
+}
 @media (max-width: 720px) {
     .SearchBtn{
         margin-left: 100px;
