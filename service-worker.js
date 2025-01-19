@@ -1,4 +1,4 @@
-const CACHE_NAME = 'physics-formulas-v7';
+const CACHE_NAME = 'physics-formulas-v8';
 const urlsToCache = [
   '/PhisicRep/Phisic/',
   '/PhisicRep/Phisic/index.html',

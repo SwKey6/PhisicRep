@@ -8,6 +8,8 @@
     <link rel="manifest" href="manifest.webmanifest">
     <link rel="apple-touch-startup-image" href="ik.png">
     <link rel="android-touch-startup-image" href="ik.png">
+    <script>window.yaContextCb=window.yaContextCb||[]</script>
+    <script src="https://yandex.ru/ads/system/context.js" async></script>
     <title>СИ</title>
 </head>
 <body>
@@ -22,6 +24,7 @@
     </header>
 
     <main>
+        <div id="yandex_rtb_R-A-13744756-1"></div>
         <div class="container">
             <h1 class="CI__title">Перевод в систему СИ</h1>
             <div class="massa1" id="massa1">
@@ -197,5 +200,13 @@
     </main>
 
     <script src="../js/CI.js"></script>
+    <script>
+        window.yaContextCb.push(() => {
+            Ya.Context.AdvManager.render({
+                "blockId": "R-A-13744756-1",
+                "renderTo": "yandex_rtb_R-A-13744756-1"
+            })
+        })
+        </script>
 </body>
 </html>
