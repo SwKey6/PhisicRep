@@ -2,22 +2,28 @@
     "background_color": "white",
     "theme_color": "white",
     "description": "Формульник по физике",
-    "display": "fullscreen",
+    "display": "standalone",
     "orientation": "any",
     "icons": [
         {
             "src": "ik.png",
             "sizes": "192x192",
-            "type": "image/png"
+            "type": "image/png",
+            "purpose": "any maskable"
         },
         {
             "src": "ik.png",
             "sizes": "512x512",
-            "type": "image/png"
+            "type": "image/png",
+            "purpose": "any maskable"
         }
     ],
     "name": "Формульник по физике",
     "short_name": "Формульник",
-    "start_url": "/PhisicRep/Phisic/",
-    "scope": "/PhisicRep/Phisic/"
+    "start_url": "/",
+    "scope": "/",
+    "id": "/",
+    "categories": ["education", "utilities"],
+    "lang": "ru",
+    "prefer_related_applications": false
 }

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="white">
+    <link rel="stylesheet" href="pageStyle.css">
+    <link rel="manifest" href="manifest.webmanifest">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta name="apple-mobile-web-app-title" content="Формульник">
+    <link rel="apple-touch-icon" href="/ik.png">
+    <link rel="apple-touch-startup-image" href="ik.png">
+    <link rel="android-touch-startup-image" href="ik.png">
+    <title>МКТ</title>
+</head>
+<body>
+    <main>
+        <h1 class="mainTitle">Выберите формулу</h1>
+        <h4 class="lowTitle">Которая вам подойдет</h4>
+        <button class="MenuBtn"><a href="../Formula.html">В меню</a></button>
+        <div class="container">
+            <div class="Formulas">
+                <h2 class="SearchTitle">Средняя Eк молекул идеального газа</h4>
+                <div class="Inputs">
+                    <Input name="Submit" class="InputFirst" placeholder="Температура в Кельвинах" id="f1"></Input>
+                </div>
+                <button class="Submit" onclick="CalculateKineticEnergy()">Подтвердить</button>
+            </div>/
+            <div class="Formulas">
+                <h2 class="SearchTitle">Cредняя скорость молекул газа</h4>
+                <div class="Inputs">
+                    <Input name="Submit" class="InputFirst" placeholder="Температура в Кельвинах" id="f2"></Input>
+                    <Input name="Submit" class="InputFirst" placeholder="1.67e-27" id="f3"></Input>
+                </div>
+                <button class="Submit" onclick="CalculateAverageSpeed()">Подтвердить</button>
+            </div>/
+            <div class="Formulas">
+                <h2 class="SearchTitle">Число молекул в газе по уравнению состояния идеального газа</h4>
+                <div class="Inputs">
+                    <Input name="Submit" class="InputFirst" placeholder="Температура в Кельвинах" id="f6"></Input>
+                    <Input name="Submit" class="InputFirst" placeholder="Давление" id="f4"></Input>
+                </div>
+                <div class="Inputs">
+                    <Input name="Submit" class="InputFirst" placeholder="Объем" id="f5"></Input>
+                </div>
+                <button class="Submit" onclick="CalculateNumberOfMolecules()">Подтвердить</button>
+            </div>/
+            <div class="Formulas">
+                <h2 class="SearchTitle">Расчет плотности газа (по МКТ)</h4>
+                <div class="Inputs">
+                    <Input name="Submit" class="InputFirst" placeholder="Температура в Кельвинах" id="f8"></Input>
+                    <Input name="Submit" class="InputFirst" placeholder="Давление" id="f7"></Input>
+                </div>
+                <div class="Inputs">
+                    <Input name="Submit" class="InputFirst" placeholder="Масса" id="f9"></Input>
+                </div>
+                <button class="Submit" onclick="CalculateDensityFromMKT()">Подтвердить</button>
+            </div>
+        </div>
+    </main>
+
+    <script src="../js/MKT.js"></script>
+</body>
+</html>
