@@ -27,10 +27,16 @@
     list-style: none;
     font-weight: 700;
     display: flex;
+    max-width: 500px;
     margin-left: 670px;
+    flex-wrap: wrap;
 }  
 .header__li{
     margin-left: 10px;
+    font-size: 25px;
+}
+.header__li1{
+    margin-left: 200px;
     font-size: 25px;
 }
 .index__title{

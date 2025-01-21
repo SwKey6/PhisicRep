@@ -24,6 +24,8 @@ const urlsToCache = [
   '/js/Q.js',
   '/Pages/MKT.html',
   '/js/MKT.js',
+  '/exemple.html',
+  '/Pages/seventh.html',
 ];
 
 self.addEventListener('install', (event) => {
