@@ -26,7 +26,7 @@
                     <Input name="Submit" class="InputFirst" placeholder="Плотность" id="f1"></Input>
                     <Input name="Submit" class="InputSecond" placeholder="Масса" id="f2"></Input>
                 </div>
-                <button class="Submit" onclick="">Подтвердить</button>
+                <button class="Submit" onclick="Number1()">Подтвердить</button>
             </div>/
             <div class="Formulas">
                 <h2 class="SearchTitle">По Архимедову закону(V = Fa/Pжид * g)</h4>
@@ -37,15 +37,23 @@
                 <div class="Inputs">
                     <Input name="Submit" class="InputFirst" placeholder="Ускорение падения" id="f5"></Input>
                 </div>
-                <button class="Submit" onclick="">Подтвердить</button>
+                <button class="Submit" onclick="Number2()">Подтвердить</button>
             </div>/
             <div class="Formulas">
-                <h2 class="SearchTitle"></h4>
+                <h2 class="SearchTitle">Через разность уровней жидкости(V = V2-V1)</h4>
                 <div class="Inputs">
-                    <Input name="Submit" class="InputFirst" placeholder="" id="f6"></Input>
-                    <Input name="Submit" class="InputSecond" placeholder="" id="f7"></Input>
+                    <Input name="Submit" class="InputFirst" placeholder="Нач. ур. жидкости" id="f6"></Input>
+                    <Input name="Submit" class="InputSecond" placeholder="Кон. ур. жидкости" id="f7"></Input>
                 </div>
-                <button class="Submit" onclick="">Подтвердить</button>
+                <button class="Submit" onclick="Number3()">Подтвердить</button>
+            </div>/
+            <div class="Formulas">
+                <h2 class="SearchTitle">Через время и расход вещества(V = Q*t)</h4>
+                <div class="Inputs">
+                    <Input name="Submit" class="InputFirst" placeholder="Объемный расход м3/с" id="f8"></Input>
+                    <Input name="Submit" class="InputSecond" placeholder="время" id="f9"></Input>
+                </div>
+                <button class="Submit" onclick="Number4()">Подтвердить</button>
             </div>
         </div>
     </main>

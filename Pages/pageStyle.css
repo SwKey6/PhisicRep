@@ -64,4 +64,7 @@ tr:nth-child(even) {
     .MenuBtn{
         margin-left: 150px;
     }
+    th, td{
+        padding: 10px 12px;
+    }
   }

@@ -17,7 +17,8 @@
 <body>
     <main>
         <h1 class="exemple__title">7 класс</h1>
-        <button class="MenuBtn"><a href="../Formula.html">В меню</a></button>
+        <h4 class="lowTitle">Если дробь - округли до тысячных, в другом случае оставь целое число</h4>
+        <button class="MenuBtn"><a href="../exemple.html">В меню</a></button>
         <div class="container">
             <div class="Formulas">
                 <h3 class="lowTitle" style="color: white;">Найдите объем</h4>
@@ -32,6 +33,37 @@
                         <tr>
                             <th id="th1"></th>
                             <th><input type="text" class="inputAnswer" id="th2"><button class="btnAnswer" onclick="GetAnswerVolume()">Ответить</button></th>
+                        </tr>
+                    </tbody>
+                </table>
+                <h3 class="lowTitle" style="color: white;">Найдите массу</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Дано</th>
+                            <th>Ответ</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th id="th3"></th>
+                            <th><input type="text" class="inputAnswer" id="th4"><button class="btnAnswer" onclick="GetAnswerMassa()">Ответить</button></th>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <h3 class="lowTitle" style="color: white;">Найдите плотность</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Дано</th>
+                            <th>Ответ</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th id="th5"></th>
+                            <th><input type="text" class="inputAnswer" id="th6"><button class="btnAnswer" onclick="GetAnswerDensity()">Ответить</button></th>
                         </tr>
                     </tbody>
                 </table>
