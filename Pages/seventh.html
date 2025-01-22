@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <meta name="theme-color" content="white">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="pageStyle.css">
     <link rel="manifest" href="manifest.webmanifest">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="default">
@@ -15,6 +15,30 @@
     <title>7 класс</title>
 </head>
 <body>
-    
+    <main>
+        <h1 class="exemple__title">7 класс</h1>
+        <button class="MenuBtn"><a href="../Formula.html">В меню</a></button>
+        <div class="container">
+            <div class="Formulas">
+                <h3 class="lowTitle" style="color: white;">Найдите объем</h4>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Дано</th>
+                            <th>Ответ</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th id="th1"></th>
+                            <th><input type="text" class="inputAnswer" id="th2"><button class="btnAnswer" onclick="GetAnswerVolume()">Ответить</button></th>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </main>
+
+    <script src="../js/seventh.js"></script>
 </body>
 </html>

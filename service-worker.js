@@ -1,4 +1,4 @@
-const CACHE_NAME = 'physics-formulas-v10';
+const CACHE_NAME = 'physics-formulas-v11';
 const urlsToCache = [
   '/',
   '/index.html',
@@ -26,6 +26,9 @@ const urlsToCache = [
   '/js/MKT.js',
   '/exemple.html',
   '/Pages/seventh.html',
+  '/js/seventh.js',
+  '/Pages/volume.html',
+  '/js/volume.js',
 ];
 
 self.addEventListener('install', (event) => {

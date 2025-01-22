@@ -27,6 +27,7 @@
     max-width: 500px;
     margin-left: 670px;
     flex-wrap: wrap;
+    align-items: center;
 }
 .header__li{
     margin-left: 10px;
@@ -63,9 +64,14 @@
         margin-left: 100px;
     }
     .header__ul{
+        max-width: 380px;
         margin-left: -30px;
     }
     .header__li{
+        font-size: 16px;
+    }
+    .header__li1{
+        margin-left: 140px;
         font-size: 16px;
     }
     .Inputs{

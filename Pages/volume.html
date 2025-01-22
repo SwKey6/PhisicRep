@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="theme-color" content="white">
+    <link rel="stylesheet" href="pageStyle.css">
+    <link rel="manifest" href="manifest.webmanifest">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta name="apple-mobile-web-app-title" content="Формульник">
+    <link rel="apple-touch-icon" href="/ik.png">
+    <link rel="apple-touch-startup-image" href="ik.png">
+    <link rel="android-touch-startup-image" href="ik.png">
+    <title>Объем</title>
+</head>
+<body>
+    <main>
+        <h1 class="mainTitle">Выберите формулу</h1>
+        <h4 class="lowTitle">Которая вам подойдет</h4>
+        <button class="MenuBtn"><a href="../Formula.html">В меню</a></button>
+        <div class="container">
+            <div class="Formulas">
+                <h2 class="SearchTitle">Через плотность(V = m/P)</h4>
+                <div class="Inputs">
+                    <Input name="Submit" class="InputFirst" placeholder="Плотность" id="f1"></Input>
+                    <Input name="Submit" class="InputSecond" placeholder="Масса" id="f2"></Input>
+                </div>
+                <button class="Submit" onclick="">Подтвердить</button>
+            </div>/
+            <div class="Formulas">
+                <h2 class="SearchTitle">По Архимедову закону(V = Fa/Pжид * g)</h4>
+                <div class="Inputs">
+                    <Input name="Submit" class="InputFirst" placeholder="Сила выталкивания" id="f3"></Input>
+                    <Input name="Submit" class="InputSecond" placeholder="Плотность жидкости" id="f4"></Input>
+                </div>
+                <div class="Inputs">
+                    <Input name="Submit" class="InputFirst" placeholder="Ускорение падения" id="f5"></Input>
+                </div>
+                <button class="Submit" onclick="">Подтвердить</button>
+            </div>/
+            <div class="Formulas">
+                <h2 class="SearchTitle"></h4>
+                <div class="Inputs">
+                    <Input name="Submit" class="InputFirst" placeholder="" id="f6"></Input>
+                    <Input name="Submit" class="InputSecond" placeholder="" id="f7"></Input>
+                </div>
+                <button class="Submit" onclick="">Подтвердить</button>
+            </div>
+        </div>
+    </main>
+
+    <script src="../js/volume.js"></script>
+</body>
+</html>

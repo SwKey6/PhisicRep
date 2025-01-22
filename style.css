@@ -87,9 +87,14 @@ tr:nth-child(even) {
         margin-left: 100px;
     }
     .header__ul{
+        max-width: 380px;
         margin-left: -30px;
     }
     .header__li{
+        font-size: 16px;
+    }
+    .header__li1{
+        margin-left: 140px;
         font-size: 16px;
     }
   }

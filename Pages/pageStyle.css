@@ -37,8 +37,27 @@
     margin-left: 890px;
     margin-bottom: 10px;
 }
+.exemple__title{
+    text-align: center;
+}
+table {
+    width: 50%;
+    border-collapse: collapse;
+    margin: 20px auto;
+}
+th, td {
+    border: 1px solid #ccc;
+    padding: 10px 60px;
+    text-align: center;
+}
+th {
+    background-color: #f4f4f4;
+}
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
 
-@media (max-width: 480px) {
+@media (max-width: 720px) {
     .Submit{
         margin-left: 120px;
     }
