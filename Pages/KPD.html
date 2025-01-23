@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="theme-color" content="white">
+    <link rel="stylesheet" href="pageStyle.css">
+    <link rel="manifest" href="manifest.webmanifest">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta name="apple-mobile-web-app-title" content="Формульник">
+    <link rel="apple-touch-icon" href="/ik.png">
+    <link rel="apple-touch-startup-image" href="ik.png">
+    <link rel="android-touch-startup-image" href="ik.png">
+    <title>КПД</title>
+</head>
+<body>
+    <main>
+        <h1 class="mainTitle">Выберите формулу</h1>
+        <h4 class="lowTitle">Которая вам подойдет</h4>
+        <button class="MenuBtn"><a href="../Formula.html" id="InMenu">В меню</a></button>
+        <div class="container">
+            <div class="Formulas">
+                <h2 class="SearchTitle">Формула КПД(An/Az *100%)</h4>
+                <div class="Inputs">
+                    <Input name="Submit" class="InputFirst" placeholder="A полезная" id="f1"></Input>
+                    <Input name="Submit" class="InputSecond" placeholder="A затраченная" id="f2"></Input>
+                </div>
+                <button class="Submit" onclick="KPD1()">Подтвердить</button>
+            </div>/
+            <div class="Formulas">
+                <h2 class="SearchTitle">Тепловые двигатели((Q1-Q2) /Q1 *100%)</h4>
+                <div class="Inputs">
+                    <Input name="Submit" class="InputFirst" placeholder="Переданное тепло" id="f3"></Input>
+                    <Input name="Submit" class="InputSecond" placeholder="Потерянное тепло" id="f4"></Input>
+                </div>
+                <button class="Submit" onclick="KPD2()">Подтвердить</button>
+            </div>/
+            <div class="Formulas">
+                <h2 class="SearchTitle">Электрические машины(P out/P in * 100%)</h4>
+                <div class="Inputs">
+                    <Input name="Submit" class="InputFirst" placeholder="P выход" id="f5"></Input>
+                    <Input name="Submit" class="InputSecond" placeholder="P вход" id="f6"></Input>
+                </div>
+                <button class="Submit" onclick="KPD3()">Подтвердить</button>
+            </div>/
+            <div class="Formulas">
+                <h2 class="SearchTitle">Тепловые машины(A пол. / Q * 100%)</h4>
+                <div class="Inputs">
+                    <Input name="Submit" class="InputFirst" placeholder="A полезная" id="f7"></Input>
+                    <Input name="Submit" class="InputSecond" placeholder="Количество теплоты" id="f8"></Input>
+                </div>
+                <button class="Submit" onclick="KPD4()">Подтвердить</button>
+            </div>
+        </div>
+    </main>
+
+    <script src="../js/KPD.js"></script>
+</body>
+</html>

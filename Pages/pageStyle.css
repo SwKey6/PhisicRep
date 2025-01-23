@@ -1,3 +1,10 @@
+body{
+    background-color: rgb(170, 231, 228);
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
 .container{
     max-width: 600px;
     margin: 0 auto;
@@ -135,7 +142,6 @@ body {
     margin: 0;
     padding: 0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #f5f6fa;
 }
 
 .main-content {

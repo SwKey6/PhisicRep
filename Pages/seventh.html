@@ -13,6 +13,7 @@
     <link rel="apple-touch-startup-image" href="ik.png">
     <link rel="android-touch-startup-image" href="ik.png">
     <title>7 класс</title>
+    <script src="https://yandex.ru/ads/system/context.js" async></script>
 </head>
 <body>
     <main class="main-content">
@@ -82,16 +83,27 @@
                                 <td id="th5"></td>
                                 <td class="answer-cell">
                                     <input type="number" class="input-answer" id="th6">
-                                    <button class="btn-answer" onclick="GetAnswerAnswer()">Ответить</button>
+                                    <button class="btn-answer" onclick="GetAnswerDensity()">Ответить</button>
                                 </td>
                             </tr>
                         </tbody>
                     </table>
                 </section>
             </div>
+
+            <div id="yandex_rtb_R-A-13744756-1"></div>
         </div>
     </main>
 
     <script src="../js/seventh.js"></script>
+
+    <script>
+        window.yaContextCb.push(() => {
+            Ya.Context.AdvManager.render({
+                "blockId": "R-A-13744756-1",
+                "renderTo": "yandex_rtb_R-A-13744756-1"
+            })
+        })
+    </script>
 </body>
 </html>

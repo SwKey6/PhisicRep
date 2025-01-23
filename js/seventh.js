@@ -39,7 +39,7 @@ function generatevolume(){
     let massa = (Math.random() * (100 - 0.1) + 0.1).toFixed(1);
 
     const densityConst = document.getElementById('th1');
-    densityConst.innerHTML = "| " + density + ' плотность|    ' + massa + ' кг';
+    densityConst.innerHTML = "| " + density + ' кг/м3|    ' + massa + ' кг';
 
     volumeAnswer = formatNumber(massa/density);
 }
@@ -69,7 +69,7 @@ function generateMassa(){
     let volume = (Math.random() * (20 - 0.1) + 0.1).toFixed(1);
 
     const densityConst = document.getElementById('th3');
-    densityConst.innerHTML = "| " + density + ' плотность|    ' + volume + ' м3';
+    densityConst.innerHTML = "| " + density + ' кг/м3|    ' + volume + ' м3';
 
     massaAnswer = formatNumber(density * volume);
 }
@@ -96,11 +96,11 @@ function GetAnswerMassa() {
 
 
 function generateDensity(){
-    let massa = Math.floor(Math.random() * (9000 - 1000 + 1)) + 1000;
+    let massa = Math.floor(Math.random() * (0.5 - 500 + 1)) + 1000;
     let volume = (Math.random() * (20 - 0.1) + 0.1).toFixed(1);
 
     const densityConst = document.getElementById('th5');
-    densityConst.innerHTML = "| " + massa + ' масса|    ' + volume + ' м3';
+    densityConst.innerHTML = "| " + massa + ' кг|    ' + volume + ' м3';
 
     densityAnswer = formatNumber(massa/volume);
 }

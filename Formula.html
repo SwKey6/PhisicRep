@@ -12,6 +12,7 @@
     <link rel="apple-touch-startup-image" href="ik.png">
     <link rel="android-touch-startup-image" href="ik.png">
     <title>Формулы</title>
+    <script src="https://yandex.ru/ads/system/context.js" async></script>
 </head>
 <body>
     <header>
@@ -42,7 +43,7 @@
                 <h4 class="SearchTitle">Плотность - P</h4>
                 <button class="SearchBtn"><a href="Pages/plotnost.html" class="aSrc">Вычислить</a></button>
             </div>
-            /
+            <div id="yandex_rtb_R-A-13744756-1"></div>
             <div class="massa">
                 <h4 class="SearchTitle">Объем - V</h4>
                 <button class="SearchBtn"><a href="Pages/volume.html" class="aSrc">Вычислить</a></button>
@@ -62,8 +63,21 @@
             <div class="massa">
                 <h4 class="SearchTitle">МКТ</h4>
                 <button class="SearchBtn"><a href="Pages/MKT.html" class="aSrc">Вычислить</a></button>
+            </div>/
+            <div class="massa">
+                <h4 class="SearchTitle">КПД</h4>
+                <button class="SearchBtn"><a href="Pages/KPD.html" class="aSrc">Вычислить</a></button>
             </div>
         </div>
     </main>
+
+    <script>
+        window.yaContextCb.push(() => {
+            Ya.Context.AdvManager.render({
+                "blockId": "R-A-13744756-1",
+                "renderTo": "yandex_rtb_R-A-13744756-1"
+            })
+        })
+    </script>
 </body>
 </html>

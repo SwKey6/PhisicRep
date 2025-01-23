@@ -1,3 +1,10 @@
+body{
+    background-color: rgb(170, 231, 228);
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
 .inputCI{
     padding: 0.6rem 2.6rem;
     border: 2px solid #ddd;
