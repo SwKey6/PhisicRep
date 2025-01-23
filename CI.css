@@ -1,18 +1,27 @@
 .inputCI{
-    padding: 10px;
+    padding: 0.6rem 2.6rem;
+    border: 2px solid #ddd;
+    border-radius: 4px;
+    width: 100px;
 }
 .Inputs{
     margin-left: 190px;
     margin-top: 10px;
 }
 .Submit{
-    padding: 20px 60px;
     margin-top: 10px;
     border-radius: 15px;
     margin-left: 190px;
+    padding: 10px 50px;
+    font-weight: 700;
+    margin-left: 200px;
+    border-radius: 10px;
+    background-color: var(--accent-color);
+    border: none;
+    cursor: pointer;
 }
 .massa{
-    background-color: #5e5e5e;
+    background-color: var(--primary-color);
     padding: 14px;
     border-radius: 15px;
 }
@@ -34,7 +43,8 @@
     font-size: 25px;
 }
 .CI__title{
-    text-align: center;
+    text-align: center;  
+    color: var(--secondary-color);
 }
 .low__title{
     text-align: center;
@@ -43,44 +53,88 @@
 .massa1{
     display: flex;
     align-items: center;
-    background-color: #5e5e5e;
+    flex-wrap: wrap;
+    background-color: var(--primary-color);
     padding: 14px;
     border-radius: 15px;
-    flex-wrap: wrap;
 }
 .moveTo{
     padding: 10px;
+    background-color: var(--accent-color);
+    border: none;
+    cursor: pointer;
+    margin: 10px;
+    border-radius: 10px;
+}
+.CI__a{
+    color: white;
+    text-decoration: none;
 }
 .header__li1{
     margin-left: 200px;
     font-size: 25px;
 }
 .moveToStart{
-    margin-left: 240px;
     padding: 14px;
+    background-color: var(--accent-color);
+    border: none;
+    cursor: pointer;
+    margin-left: 240px;
+    border-radius: 10px;
 }
-@media (max-width: 720px) {
-    .SearchBtn{
-        margin-left: 100px;
-    }
-    .header__ul{
-        max-width: 380px;
-        margin-left: -30px;
-    }
-    .header__li{
+.header__a{
+    color: var(--secondary-color);
+}
+
+:root {
+    --primary-color: #2c3e50;
+    --secondary-color: #34495e;
+    --accent-color: #3498db;
+    --text-light: #ffffff;
+    --spacing-unit: 1rem;
+}
+@media (max-width: 768px) {
+    .container {
+        width: 100%;
+        padding: 0 15px;
+      }
+    
+      .header__ul {
+        max-width: 100%;
+        margin: 0;
+        padding: 10px;
+        justify-content: center;
+      }
+    
+      .header__li, .header__li1 {
+        margin: 5px;
         font-size: 16px;
-    }
-    .header__li1{
-        margin-left: 140px;
-        font-size: 16px;
-    }
-    .Inputs{
-        margin-left: 70px;
-    }
-    .Submit{
-        margin-left: 70px;
-    }
-    .moveToStart{
-        margin-left: 70px;
-    }
+      }
+    
+      .Inputs {
+        margin-left: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+    
+      .inputCI {
+        width: 80%;
+        margin: 5px 0;
+      }
+    
+      .Submit, .moveToStart {
+        margin: 10px auto;
+        width: 80%;
+      }
+    
+      .massa1 {
+        justify-content: center;
+        gap: 10px;
+      }
+    
+      .moveTo {
+        width: calc(50% - 10px);
+        margin: 5px;
+      }
   }

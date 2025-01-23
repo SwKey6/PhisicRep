@@ -9,9 +9,9 @@
     text-align: center;
 }
 .Formulas{
-    background-color: gray;
-    padding: 20px;
-    border-radius: 20px;
+    background-color: var(--primary-color);
+    padding: 14px;
+    border-radius: 15px;
 }
 .SearchTitle{
     text-align: center;
@@ -30,12 +30,25 @@
     padding: 16px;
     margin-top: 10px;
     margin-left: 220px;
-    border-radius: 15px;
+    border-radius: 10px;
+    background-color: var(--accent-color);
+    border: none;
+    cursor: pointer;
+    color: #fff;
 }
 .MenuBtn{
-    padding: 10px 20px;
     margin-left: 890px;
     margin-bottom: 10px;
+    padding: 1rem 2rem;
+    background-color: var(--accent-color);
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+#InMenu{
+    color: white;
+    text-decoration: none;
 }
 .exemple__title{
     text-align: center;
@@ -57,14 +70,216 @@ tr:nth-child(even) {
     background-color: #f9f9f9;
 }
 
-@media (max-width: 720px) {
-    .Submit{
-        margin-left: 120px;
+:root {
+    --primary-color: #2c3e50;
+    --secondary-color: #34495e;
+    --accent-color: #3498db;
+    --text-light: #ffffff;
+    --spacing-unit: 1rem;
+}
+
+@media (max-width: 768px) {
+    .container {
+        max-width: 100%;
+        padding: 0 15px;
+      }
+    
+      .mainTitle, .lowTitle {
+        font-size: 1.5rem;
+        padding: 0 10px;
+      }
+    
+      .Formulas {
+        margin: 10px;
+      }
+    
+      .Inputs {
+        margin-left: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+    
+      .Submit {
+        margin-left: auto;
+        margin-right: auto;
+        width: 80%;
+      }
+    
+      .MenuBtn {
+        margin: 10px auto;
+        display: block;
+        width: 80%;
+      }
+    
+      table {
+        width: 100%;
+        font-size: 14px;
+      }
+    
+      th, td {
+        padding: 8px;
+      }
     }
-    .MenuBtn{
-        margin-left: 150px;
+    
+
+  :root {
+    --primary-color: #2c3e50;
+    --secondary-color: #34495e;
+    --accent-color: #3498db;
+    --text-light: #ffffff;
+    --spacing-unit: 1rem;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f5f6fa;
+}
+
+.main-content {
+    padding: var(--spacing-unit);
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.main-title {
+    margin: 0;
+    color: var(--primary-color);
+    font-size: 2.5rem;
+}
+
+.subtitle {
+    text-align: center;
+    color: var(--secondary-color);
+    margin-bottom: 2rem;
+}
+
+.menu-btn {
+    padding: 0.8rem 1.5rem;
+    background-color: var(--accent-color);
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.menu-btn a {
+    color: var(--text-light);
+    text-decoration: none;
+}
+
+.menu-btn:hover {
+    background-color: #2980b9;
+}
+
+.formulas-wrapper {
+    background-color: var(--secondary-color);
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.formula-section {
+    margin-bottom: 2rem;
+}
+
+.section-title {
+    color: var(--text-light);
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.table-wrapper {
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    background-color: white;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+th, td {
+    padding: 1rem;
+    text-align: center;
+    border: 1px solid #eee;
+}
+
+th {
+    background-color: var(--primary-color);
+    color: var(--text-light);
+}
+
+.answer-cell {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.input-answer {
+    padding: 0.5rem;
+    border: 2px solid #ddd;
+    border-radius: 4px;
+    width: 100px;
+}
+
+.btn-answer {
+    padding: 0.5rem 1rem;
+    background-color: var(--accent-color);
+    color: var(--text-light);
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn-answer:hover {
+    background-color: #2980b9;
+}
+
+@media (max-width: 768px) {
+    .main-content {
+        padding: 0.5rem;
     }
-    th, td{
-        padding: 10px 12px;
+
+    .header {
+        flex-direction: column;
+        gap: 1rem;
     }
-  }
+
+    .main-title {
+        font-size: 2rem;
+    }
+
+    .menu-btn {
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+
+    .formulas-wrapper {
+        padding: 1rem;
+    }
+
+    .answer-cell {
+        flex-direction: column;
+    }
+
+    .input-answer {
+        width: 80%;
+    }
+
+    .btn-answer {
+        width: 100%;
+    }
+}

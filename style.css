@@ -4,12 +4,14 @@
 }
 .mainTitle{
     text-align: center;
+    color: var(--secondary-color);
 }
 .lowTitle{
-    text-align: center;
+    text-align: center;  
+    color: var(--secondary-color);
 }
 .massa{
-    background-color: #5e5e5e;
+    background-color: var(--primary-color);
     padding: 14px;
     border-radius: 15px;
 }
@@ -19,9 +21,16 @@
 }
 .SearchBtn{
     padding: 10px 50px;
-    font-weight: 700px;
+    font-weight: 700;
     margin-left: 200px;
-    border-radius: 15px;
+    border-radius: 10px;
+    background-color: var(--accent-color);
+    border: none;
+    cursor: pointer;
+}
+.aSrc{
+    text-decoration: none;
+    color: #fff;
 }
 .header__ul{
     list-style: none;
@@ -35,12 +44,16 @@
     margin-left: 10px;
     font-size: 25px;
 }
+.header__a{
+    color: var(--secondary-color);
+}
 .header__li1{
     margin-left: 200px;
     font-size: 25px;
 }
 .index__title{
     text-align: center;
+    color: var(--secondary-color);
 }
 .CI__title{
     text-align: center;
@@ -64,7 +77,8 @@
 }
 .index__p{
     font-size: 20px;
-    text-align: center;
+    text-align: center;  
+    color: var(--secondary-color);
 }
 table {
     width: 50%;
@@ -75,26 +89,66 @@ th, td {
     border: 1px solid #ccc;
     padding: 10px;
     text-align: center;
+    background-color: var(--primary-color);
+    color: white;
 }
 th {
     background-color: #f4f4f4;
+    background-color: var(--primary-color);
+    color: white;
+}
+.index__ul__title{
+    color: var(--secondary-color);
+}
+.index__li{
+    color: var(--primary-color);
+    font-size: 20px;
 }
 tr:nth-child(even) {
     background-color: #f9f9f9;
 }
+:root {
+    --primary-color: #2c3e50;
+    --secondary-color: #34495e;
+    --accent-color: #3498db;
+    --text-light: #ffffff;
+    --spacing-unit: 1rem;
+}
+
 @media (max-width: 720px) {
-    .SearchBtn{
-        margin-left: 100px;
-    }
-    .header__ul{
-        max-width: 380px;
-        margin-left: -30px;
-    }
-    .header__li{
-        font-size: 16px;
-    }
-    .header__li1{
-        margin-left: 140px;
-        font-size: 16px;
-    }
+    @media (max-width: 768px) {
+        .container {
+          width: 100%;
+          padding: 0 15px;
+        }
+      
+        .header__ul {
+          max-width: 100%;
+          margin: 0;
+          padding: 10px;
+          justify-content: center;
+          gap: 10px;
+        }
+      
+        .header__li, .header__li1 {
+          margin: 0;
+          font-size: 16px;
+        }
+      
+        .SearchBtn {
+          margin-left: auto;
+          margin-right: auto;
+          display: block;
+          width: 80%;
+        }
+      
+        .massa {
+          margin: 10px 0;
+        }
+      
+        .index__li {
+          font-size: 16px;
+          line-height: 1.4;
+        }
+      }
   }
