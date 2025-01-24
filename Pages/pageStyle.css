@@ -2,7 +2,6 @@ body{
     background-color: #76a88c;
     margin: 0;
     padding: 0;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .container{
@@ -11,6 +10,7 @@ body{
 }
 .mainTitle{
     text-align: center;
+    font-family: "Pacifico", serif;
 }
 .lowTitle{
     text-align: center;
@@ -83,7 +83,7 @@ tr:nth-child(even) {
     --accent-color: #3498db;
     --text-light: #ffffff;
     --spacing-unit: 1rem;
-}
+} 
 
 @media (max-width: 768px) {
     .container {

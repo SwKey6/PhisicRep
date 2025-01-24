@@ -106,6 +106,9 @@ th {
 }
 .index__ul__title{
     color: var(--secondary-color);
+    display: flex;
+    align-items: center;
+    gap: 10px;
 }
 .index__li{
     color: var(--primary-color);
@@ -120,6 +123,23 @@ tr:nth-child(even) {
     --accent-color: #3498db;
     --text-light: #ffffff;
     --spacing-unit: 1rem;
+}
+
+.img__btn{
+    width: 60px;
+    height: 60px;
+    transition: transform 0.3s;
+}
+.btn__img {
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+.img__btn.active {
+    transform: rotate(180deg);
 }
 
 @media (max-width: 720px) {
@@ -141,6 +161,17 @@ tr:nth-child(even) {
           margin: 0;
           font-size: 16px;
         }
+
+        table {
+            width: 90%; /* Увеличиваем ширину относительно контейнера */
+            font-size: 14px;
+            margin: 10px auto;
+        }
+    
+        th, td {
+            padding: 10px 8px;
+            font-size: 12px;
+        }
       
         .SearchBtn {
           margin-left: auto;
@@ -158,4 +189,45 @@ tr:nth-child(even) {
           line-height: 1.4;
         }
       }
+
+        .index__ul__title {
+            font-size: 18px;
+            padding: 0 15px;
+        }
+
+        .img__btn {
+            width: 40px;
+            height: 40px;
+        }
+
+        .btn__img {
+            padding: 5px;  /* Увеличиваем область нажатия для мобильных */
+        }
   }
+
+  @media (max-width: 480px) {
+    .index__ul__title {
+        font-size: 16px;
+    }
+
+    .img__btn {
+        width: 40px;
+        height: 40px;
+    }
+
+    table {
+        width: 95%;
+        font-size: 12px;
+    }
+
+    th, td {
+        padding: 10px 3px;
+        font-size: 11px;
+    }
+
+    /* Добавляем горизонтальный скролл для очень узких экранов */
+    .mainIDinCI {
+        overflow-x: auto;
+        padding: 0 10px;
+    }
+}
